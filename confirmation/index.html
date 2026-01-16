@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jethro</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1415761660332318');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1415761660332318&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 50px; color: #fff; text-align: center;">Meeting Confirmed, Thank you!</h1>
+    <footer class="footer">
+        <span style="color: white; font-family: 'Lora', serif; font-size: 16px; letter-spacing: 1px;">Los Angeles, CA  |  </span><a href="#" id="email-link"></a>
+    </footer>
+    <script>
+        (function() {
+            const encoded = 'aGVsbG9AZ2V0amV0aHJvLmNvbQ==';
+            const email = atob(encoded);
+            const link = document.getElementById('email-link');
+            link.href = 'mailto:' + email;
+            link.textContent = email;
+        })();
+    </script>
+</body>
+</html>
