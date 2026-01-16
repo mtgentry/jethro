@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jethro</title>
     <link rel="stylesheet" href="../styles.css">
-    <!-- Meta Pixel Code -->
+    
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,19 +15,22 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
+    
     fbq('init', '1415761660332318');
     fbq('track', 'PageView');
+    fbq('track', 'Schedule'); /* <--- THIS IS THE CRITICAL FIX */
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1415761660332318&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
-</head>
+    </head>
 <body>
     <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 50px; color: #fff; text-align: center;">Meeting Confirmed, Thank you!</h1>
+    
     <footer class="footer">
         <span style="color: white; font-family: 'Lora', serif; font-size: 16px; letter-spacing: 1px;">Los Angeles, CA  |  </span><a href="#" id="email-link"></a>
     </footer>
+
     <script>
         (function() {
             const encoded = 'aGVsbG9AZ2V0amV0aHJvLmNvbQ==';
