@@ -32,7 +32,9 @@ body {
 
 .logo {
     max-width: 450px;
+    width: 100%;
     height: auto;
+    padding: 0 20px;
 }
 
 .footer {
