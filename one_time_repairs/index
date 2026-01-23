@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Maintenance on Autopilot</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1415761660332318');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1415761660332318&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <h1>Put your home maintenance on autopilot</h1>
+    <p class="h1-subheadline">Stop acting as your own project manager. We handle the sensors, the specialists, and the schedule so you can simply enjoy your home.</p>
+
+
+    <div class="how-it-works">
+        <h2>Automated Monitoring</h2>
+       <p class="h2-subheadline">It starts with a diagnostic walkthrough. In 45 minutes, we will assess your home's condition and build a custom maintenance plan. You can use this roadmap to guide your own repairs, or hand it to us and take your home maintenance off your plate.</p>Our automated monitoring system acts as a constant guardian for your property, using strategically placed smart sensors to detect and prevent the most common home insurance claims before they become disasters. Sensors in high-risk areas like under sinks, near water heaters, and by appliances instantly detect water leaks—even a single drop—and alert our system to stop small problems before they become floods. Simultaneously, humidity sensors monitor moisture levels around the clock, analyzing patterns to catch abnormal conditions that could lead to mold or structural damage. This autopilot approach provides comprehensive, hands-free protection that works silently in the background to safeguard your home.   </p>
+
+
+        <div class="step">
+     
+            <div class="step-content">
+                <img src="../images/leak_sensor.jpg" alt="Temperature sensor" class="step-image">
+                <h3>Instant Leak Detection</h3>
+                <p>Water damage is the most common and costly home insurance claim. We place smart sensors in high-risk zones—like under sinks, water heaters, and washing machines. If even a single drop of water is detected, our system alerts us instantly, allowing us to stop a small leak before it becomes a disastrous flood.</p>
+            </div>
+        </div>
+
+
+        <div class="step">
+            
+            <div class="step-content">
+                <img src="../images/humidity_sensor_attic.jpg" alt="Humidity sensor" class="step-image">
+                <h3>Smart Humidity Tracking</h3>
+                <p>We monitor "at-risk" areas 24/7 to catch moisture issues early. By analyzing long-term patterns, our system detects abnormal humidity levels instantly, preventing costly water damage and mold growth.</p>
+            </div>
+        </div>
+
+
+        <div class="step">
+     
+            <div class="step-content">
+                <img src="../images/temp_sensor.jpg" alt="Temperature sensor" class="step-image">
+                <h3>Temperature sensors</h3>
+                <p>These are the backbone of our system. Temperature sensors in the attic can alert us to energy improvments that can be made. We compare your attic temperature to other homes in our network.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="step">
+        
+            <div class="step-content">
+                <img src="../images/radon_sensor.jpg" alt="Radon sensor" class="step-image">
+                <h3>Continuous Radon Testing</h3>
+                <p>Radon is the 2nd leading cause of lung cancer after smoking. In Los Angeles, 
+  seismic activity and nearby construction can unlock radon pockets unexpectedly. 
+  Some might call continuous monitoring overkill, but it's what I do in my own home. 
+  We don't rely on the EPA's "every 2 years" minimum; we test 24/7 so you are 
+  alerted the moment air quality drops.</p>
+            </div>
+        </div>
+
+
+
+
+     <div class="step">
+        
+            <div class="step-content">
+                <img src="../images/jethro_flow_sensor.jpg" alt="Radon sensor" class="step-image">
+                <h3>Water innefficncey detection (coming soon)</h3>
+                <p>High water bills are often caused by "silent" wastes—like a running toilet, a stuck irrigation valve, or a dripping faucet. Instead of waiting for a surprise bill, our system monitors flow patterns to identify leaks and inefficiencies instantly, saving you money every month.</p>
+            </div>
+        </div>
+
+
+
+
+     <div class="step">
+         
+            <div class="step-content">
+                <img src="../images/hvac_pressure sensor.jpg" alt="Radon sensor" class="step-image">
+                <h3>HVAC Pressure Monitoring (coming soon)</h3>
+                <p>The standard advice to change filters "every 3-6 months" is just a guess. It doesn’t account for pets, allergies, or heavy usage during heatwaves. We monitor the actual pressure inside your ducts to tell you exactly when your filter is clogged. This ensures maximum air quality without wasting money on filters you don't need yet.</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <h2>Additonal Benefits of Autopilot</h2>
+    <p class="h2-subheadline">We offer two plans. If you have a one-time task, we can pay by the hour. This is what you're you're used to. Some people start with this just to get a sense of our service without commiting. </p>
+    
+
+    <h3 class="section-header">Power outages (Is the power out for just us?)</h3>
+     <p class="h2-subheadline">Power outages are a regular occurance in Los Angeles. Because we have a network of homes in close proximity, we alert you if the power out is the entire neighborhood or just you. Our system has a backup battery and doesn't depend on wifi, so the system won't fail during an outage. </p>
+
+
+
+
+    <h3 class="section-header">Autopilot</h3>
+     <p class="h2-subheadline">Homeownership often feels less like an investment and more like a liability.</p>
+
+  <p class="h2-subheadline">It’s the constant, low-grade anxiety of the next unexpected repair bill and the never-ending cycle of recurring chores eating up your free time. The mental load of diagnosing what’s wrong is heavy enough, but then the real work begins.</p>
+
+  <p class="h2-subheadline">You’re forced to vet strangers, chase down clear pricing, and worry about shoddy work or unfinished jobs. Autopilot changes the game. We accept the responsibility so you don’t have to—handling silent maintenance automatically and unexpected repairs instantly.</p>
+  
+
+
+
+
+
+
+    <div class="cards-container">
+       <div class="pricing-card-left">
+            <h3 class="pricing-card-title">One-Time Repair</h3>
+            <p class="pricing-card-desc">When something breaks or you want an upgrade, text us. We handle the repair or manage the vendor for you.</p>
+            <div class="pricing-card-price-wrap">
+                <span class="pricing-card-price-number">$99</span><span class="pricing-card-price-text">/ hr</span>
+            </div>
+            <a href="https://calendly.com/hellojethro/30min" target="_blank" rel="noopener noreferrer" class="pricing-card-cta">Schedule a Visit</a>
+            <h4 class="pricing-card-includes">Includes:</h4>
+            <ul class="pricing-card-list">
+                <li class="pricing-card-list-item">Leaky faucets</li>
+                <li class="pricing-card-list-item">Millwork repair</li>
+                <li class="pricing-card-list-item">Sticking doors & windows</li>
+                <li class="pricing-card-list-item">Assembly & Installation</li>
+                <li class="pricing-card-list-item">Paint touch-ups</li>
+                <li class="pricing-card-list-item">And more...</li>
+            </ul>
+        </div>
+
+
+
+
+
+  <div class="pricing-card-left">
+            <h3 class="pricing-card-title">Autopilot</h3>
+            <p class="pricing-card-desc">We put the essential health of your home on a recurring schedule. You don't ask for it; it just happens. When something fails in your house, we get alerted and come take care of it.</p>
+            <div class="pricing-card-price-wrap">
+                <span class="pricing-card-price-number">$200</span><span class="pricing-card-price-text">/ mo</span>
+            </div>
+            <a href="https://calendly.com/hellojethro/30min" target="_blank" rel="noopener noreferrer" class="pricing-card-cta">Become a Core member</a>
+            <h4 class="pricing-card-includes">Includes:</h4>
+            <ul class="pricing-card-list">
+                <li class="pricing-card-list-item">Water leak sensors</li>
+                <li class="pricing-card-list-item">HVAC filter replacements</li>
+                <li class="pricing-card-list-item">Moisture & temperature sensors</li>
+                <li class="pricing-card-list-item">24/7 radon monitoring</li>
+                <li class="pricing-card-list-item">And more...</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <h2>Ready to put your home maintenance on autopilot?</h2>
+    <p class="h2-subheadline">It starts with a diagnostic walkthrough. In 45 minutes, we will assess your home's condition and build a custom maintenance plan. You can use this roadmap to guide your own repairs, or hand it to us and take your home maintenance off your plate.</p>
+    <a href="https://calendly.com/hellojethro/30min" target="_blank" rel="noopener noreferrer" class="ghost-button">Schedule My Audit</a>
+</body>
+</html>
