@@ -24,6 +24,10 @@ body {
     position: relative;
 }
 
+body a {
+    color: #fff;
+}
+
 .logo-container {
     display: flex;
     justify-content: center;
@@ -218,6 +222,15 @@ h2 {
 
 .step p strong {
     font-weight: 700;
+}
+
+.step p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.step p a:hover {
+    text-decoration: underline;
 }
 
 .example-tasks-list {
