@@ -666,7 +666,7 @@ h2 {
     height: 165px;
     background-color: #02007C;
     border-radius: 20px;
-    padding: 20px 30px;
+    padding: 1px 30px;
     z-index: 1000;
     box-sizing: border-box;
 }
@@ -788,4 +788,13 @@ h2 {
     color: #fff;
     line-height: 150%;
     font-size: 19px;
+}
+
+/* Mobile styles for countdown timer */
+@media (max-width: 768px) {
+    .fixed-countdown {
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: calc(100% - 20px);
+    }
 }
