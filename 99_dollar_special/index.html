@@ -24,9 +24,30 @@
     <!-- End Meta Pixel Code -->
 </head>
 <body>
+    <!-- Fixed countdown timer in bottom left -->
+    <div class="fixed-countdown">
+        <div class="countdown-header">LIMITED SLOTS AVAILABLE</div>
+        <div class="countdown-subheader">Claim voucher in the next:</div>
+        <div class="countdown-numbers">
+            <div class="countdown-block">
+                <span class="countdown-number" id="hours">00</span>
+                <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-separator">|</div>
+            <div class="countdown-block">
+                <span class="countdown-number" id="minutes">00</span>
+                <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-separator">|</div>
+            <div class="countdown-block">
+                <span class="countdown-number" id="seconds">00</span>
+                <span class="countdown-label">Seconds</span>
+            </div>
+        </div>
+    </div>
+
     <h1>I'll Fix That One Broken Thing in Your House for $99</h1>
-    <br><br>  <br><br>
-    
+
 <video controls poster="../images/preview.png">
     <source src="vsl.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -79,28 +100,37 @@ It leaves you stuck in a tough spot choosing between big contractors who are boo
 
 
  <div class="how-it-works">
-        <h2>THE DETAILS</h2>
+        <h2>FAQ</h2>
 
-        <div class="step">
-         
-        <h3>2 Hours or less</h3>
-            <p>The $99 covers 2 hours of labor. But I’m not watching the clock, I’m focused on the fix. If a standard repair runs a little over time, that’s on me. I finish the job, and you still only pay $99. No surprise fees.</p>
+        <div class="faq-item">
+            <h3 class="faq-question">
+                <span>What if the job takes more than 2 hours?</span>
+                <span class="faq-caret"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>The $99 covers 2 hours of labor. But I'm not watching the clock, I'm focused on the fix. If a standard repair runs a little over time, that's on me. I finish the job, and you still only pay $99. No surprise fees.</p>
+            </div>
         </div>
 
-
-        <div class="step">
-            
-        <h3>Nearby Neighbors Only</h3>
-            <p>This offer is exclusively for homeowners within 3 miles of West Adams. Hancock Park, Larchmont, Mid-Wilshire? Yes! (If you arrived here from a Facebook or Instagram ad, you are almost certainly within range). </p>
+        <div class="faq-item">
+            <h3 class="faq-question">
+                <span>Do you cover my neighborhood?</span>
+                <span class="faq-caret"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>This offer is exclusively for homeowners within 3 miles of West Adams. Hancock Park, Larchmont, Mid-Wilshire? Yes! (If you arrived here from a Facebook or Instagram ad, you are almost certainly within range).</p>
+            </div>
         </div>
 
-
-        <div class="step">
-          
-        <h3>What About Parts?</h3>
-            <p>The $99 covers all my labor and tools. You only pay for parts if the job actually needs them (like a new light fixture). If I can fix it with the supplies I have on hand, there’s no extra cost.</p>
+        <div class="faq-item">
+            <h3 class="faq-question">
+                <span>Are replacement parts included in the $99?</span>
+                <span class="faq-caret"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>The $99 covers all my labor and tools. You only pay for parts if the job actually needs them (like a new light fixture). If I can fix it with the supplies I have on hand, there's no extra cost.</p>
+            </div>
         </div>
-
 
     </div>
 
@@ -108,29 +138,93 @@ It leaves you stuck in a tough spot choosing between big contractors who are boo
 
 
 
- <div class="how-it-works">
-        <h2>HOW TO BOOK</h2>
 
-        <div class="step">
-           
-        <h3>Step 1</h3>
-            <p>Send me a photo of what needs fixing</p>
-        </div>
-
-        <div class="step">
-
-   <h3>Step 2</h3>
-            <p>Text it to me here: <strong>(818) 294-0844</strong></p>
-        </div>
-
-        <div class="step">
-          
-      <h3>Step 3</h3>
-            <p>I'll respond within 10 minutes to let you know if I can help!</p>
-        </div>
+    <!-- Email Capture Section -->
+    <div class="how-it-works email-capture-section">
+        <h2>Claim Your $99 Voucher</h2>
+        <p class="voucher-subheadline"></p>
+        <img src="../images/voucher.png" alt="$99 Voucher" class="voucher-image">
+        <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+        <iframe src="https://subscribe-forms.beehiiv.com/33a511d0-acc4-4b14-b751-682fc0baccba" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width: 560px; height: 275px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"></iframe>
     </div>
 
-    <a href="sms:18182940844" class="cta-button">Text Mason</a>
+    <script>
+        // Get or set the countdown end time (stored in browser)
+        function getCountdownEndTime() {
+            // Check if we already have an end time stored
+            let storedEndTime = localStorage.getItem('countdownEndTime');
+
+            if (storedEndTime) {
+                // Use the stored end time
+                return new Date(storedEndTime);
+            } else {
+                // First visit - create new end time
+                const now = new Date();
+                const pstTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+                const endTime = new Date(pstTime.getTime() + (36 * 60 * 60 * 1000)); // 36 hours from now
+
+                // Store it in browser so it persists across refreshes
+                localStorage.setItem('countdownEndTime', endTime.toISOString());
+
+                return endTime;
+            }
+        }
+
+        function updateCountdown() {
+            // Get current time in PST/PDT
+            const now = new Date();
+            const pstTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+
+            // Get the end time (either stored or newly created)
+            const endTime = getCountdownEndTime();
+
+            // Calculate time difference
+            const diff = endTime - pstTime;
+
+            if (diff <= 0) {
+                document.querySelector('.fixed-countdown').style.display = 'none';
+                // Clear the stored time so a new countdown can start
+                localStorage.removeItem('countdownEndTime');
+                return;
+            }
+
+            // Calculate days, hours, minutes, seconds
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // Add days to hours if there are any days
+            const totalHours = (days * 24) + hours;
+
+            // Display countdown in new format
+            document.getElementById('hours').textContent = String(totalHours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        // Update countdown immediately and then every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
